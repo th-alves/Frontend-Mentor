@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    /* Main */
+    main {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 2560px) {
+    /* Body */
+    body {
+        height: 90vh;
+    }
+
+    /* Main */
+    main {
+        width: 30%;
+    }
+}
