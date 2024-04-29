@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+:root {
+    /* Primary */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Dark-cyan-hover: hsl(158, 36%, 28%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Fonts */
+    --montserrat: 'Montserrat', sans-serif;
+    --fraunces: font-family: 'Fraunces', serif;
+
+    /* Margin */
+    --margin-peq: 0.875rem; /* 14px */
+    --margin-med: 1.5rem; /* 24px */
+    --margin-gr: 2rem; /* 32px */
+    
+    /* Padding */
+    --padding-peq: 0.875rem; /* 14px */
+    --padding-med: 1.5rem; /* 24px */
+    --padding-gr: 2rem; /* 32px */
+}
+
+@media screen and (min-width: 1200px) and (max-width: 2560px) {
+    /* Main */
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 50%;
+    }
+    /* Right Side */
+    #right-side img {
+        width: 500px;
+        vertical-align: bottom;
+    }
+
+    /* Left Side */
+    #left-side {
+        margin: var(--margin-gr);
+    }
+
+    #left-side button {
+        width: 50%;
+    }
+}

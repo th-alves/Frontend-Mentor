@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Primary */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Desaturated-blue-link: hsl(258, 47%, 67%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+  /* Fonts */
+  --font-padrao: 'Red Hat Display', sans-serif;
+
+  /* Margin */
+  --margin-peq: 0.875rem; /* 14px */
+  --margin-med: 1rem; /* 16px */
+  --margin-gr: 1.5rem; /* 24px */
+  --margin-xxl: 2rem; /* 32px */
+  
+  /* Padding */
+  --padding-peq: 0.875rem; /* 14px */
+  --padding-med: 1rem; /* 16px */
+  --padding-gr: 1.5rem; /* 24px */
+  --padding-xxl: 2rem; /* 32px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-padrao);
+}
+
+body {
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+/* Main */
+main {
+    width: 90%;
+    margin: var(--margin-gr) auto;
+    padding-bottom: var(--padding-gr);
+
+    overflow: hidden;
+
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+/* img Main */
+#img-main img {
+    max-width: 100%;
+}
+
+/* First Block Text */
+#text-summary {
+  margin: var(--margin-gr);
+  text-align: center;
+}
+
+#text-summary h1 {
+  margin-bottom: var(--margin-peq);
+  color: var(--Dark-blue);
+  font-weight: 900;
+}
+
+#text-summary p,
+.icon-text .text-plan span {
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+  line-height: 30px;
+}
+
+/* Annual Plans */
+main .annual-plan,
+.icon-text {
+    display: flex;
+    align-items: center;
+}
+
+main .annual-plan {
+    justify-content: space-between;
+    margin: 0 var(--margin-xxl);
+    padding: var(--padding-peq);
+
+    border-radius: 20px;
+    background-color: var(--Very-pale-blue);
+}
+
+main .annual-plan a {
+  font-weight: 700;
+}
+
+main .annual-plan a:hover {
+  color: var(--Desaturated-blue-link);
+}
+
+.icon-text {
+    gap: 20px;
+}
+
+.icon-text .text-plan p {
+  color: var(--Dark-blue);
+  font-weight: 900;
+}
+
+/* Buttons */
+main .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: var(--margin-gr);
+}
+
+main .btn button {
+  margin-bottom: var(--margin-gr);
+  padding: var(--padding-peq);
+
+  width: 80%;
+  background-color: var(--Bright-blue);
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 10px;
+  box-shadow: 9px 9px 7px rgba(0, 0, 0, 0.1);
+  transition: background .7s ease;
+}
+
+main .btn button:hover {
+  background-color: var(--Desaturated-blue-link);
+}
+
+main .btn a {
+  color: var(--Desaturated-blue);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+main .btn a:hover {
+  color: var(--Dark-blue);
+}
+
+/* Footer */
+footer .attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Config Screen's 320px */
+@media screen and (max-width: 320px) {
+  main .annual-plan {
+    margin: 0 var(--margin-peq);
+  }
+}

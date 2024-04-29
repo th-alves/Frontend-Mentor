@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /* margin */
+  --m-1: 0.25rem; /* 4px */
+  --m-1-5: 0.375rem; /* 6px */
+  --m-2: 0.5rem; /* 8px */
+  --m-2-5: 0.625rem; /* 10px */
+  --m-3: 0.75rem; /* 12px */
+  --m-3-5: 0.875rem; /* 14px */
+  --m-4: 1rem; /* 16px */
+  --m-5: 1.25rem; /* 20px */
+  --m-6: 1.5rem; /* 24px */
+  --m-7: 1.75rem; /* 28px */
+  --m-8: 2rem; /* 32px */
+  --m-9: 2.25rem; /* 36px */
+  --m-10: 2.5rem; /* 40px */
+  --m-11: 2.75rem; /* 44px */
+  --m-12: 1.25rem; /* 20px */
+  --m-14: 3.5rem; /* 56px */
+  --m-16: 4rem; /* 64px */
+  --m-20: 5rem; /* 80px */
+  --m-24: 6rem; /* 96px */
+  --m-28: 7rem; /* 112px */
+  --m-32: 8rem; /* 128px */
+  --m-36: 9rem; /* 144px */
+  --m-40: 10rem; /* 160px */
+  --m-44: 11rem; /* 176px */
+  --m-48: 12rem; /* 192px */
+  --m-52: 13rem; /* 208px */
+  --m-56: 14rem; /* 224px */
+  --m-60: 15rem; /* 240px */
+  --m-64: 16rem; /* 256px */
+  --m-72: 18rem; /* 288px */
+  --m-80: 20rem; /* 320px */
+  --m-96: 24rem; /* 384px */
+
+  /* padding */
+  --p-1: 0.25rem; /* 4px */
+  --p-1-5: 0.375rem; /* 6px */
+  --p-2: 0.5rem; /* 8px */
+  --p-2-5: 0.625rem; /* 10px */
+  --p-3: 0.75rem; /* 12px */
+  --p-3-5: 0.875rem; /* 14px */
+  --p-4: 1rem; /* 16px */
+  --p-5: 1.25rem; /* 20px */
+  --p-6: 1.5rem; /* 24px */
+  --p-7: 1.75rem; /* 28px */
+  --p-8: 2rem; /* 32px */
+  --p-9: 2.25rem; /* 36px */
+  --p-10: 2.5rem; /* 40px */
+  --p-11: 2.75rem; /* 44px */
+  --p-12: 1.25rem; /* 20px */
+  --p-14: 3.5rem; /* 56px */
+  --p-16: 4rem; /* 64px */
+  --p-20: 5rem; /* 80px */
+  --p-24: 6rem; /* 96px */
+  --p-28: 7rem; /* 112px */
+  --p-32: 8rem; /* 128px */
+  --p-36: 9rem; /* 144px */
+  --p-40: 10rem; /* 160px */
+  --p-44: 11rem; /* 176px */
+  --p-48: 12rem; /* 192px */
+  --p-52: 13rem; /* 208px */
+  --p-56: 14rem; /* 224px */
+  --p-60: 15rem; /* 240px */
+  --p-64: 16rem; /* 256px */
+  --p-72: 18rem; /* 288px */
+  --p-80: 20rem; /* 320px */
+  --p-96: 24rem; /* 384px */
+
+  /* Primary Colors */
+  --bg-card-text-color: hsl(300, 43%, 22%);
+  --verified-buyer: hsl(333, 80%, 67%);
+  --bg-rated-stars: hsla(333, 80%, 67%, 0.1);
+
+  /* Neutral Colors */
+  --text-rated: hsl(303, 10%, 53%);
+  --text-cards: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  width: 90%;
+  margin: auto;
+  padding: var(--p-10) 0 0;
+  text-align: center;
+}
+
+/* Text Rated */
+#text-rated h1 {
+  color: var(--bg-card-text-color);
+  margin-bottom: var(--m-4);
+}
+
+#text-rated p {
+  margin-bottom: var(--m-4);
+  color: var(--text-rated);
+  line-height: 20px;
+}
+
+/* Stars Container */
+.rated .stars {
+  margin-bottom: var(--m-4);
+  background-color: var(--bg-rated-stars);
+  color: var(--bg-card-text-color);
+  font-weight: 700;
+  border-radius: 5px;
+  padding: var(--p-4);
+}
+
+.rated .stars p {
+  padding-top: var(--p-2);
+}
+
+/* Users */
+#users-card article {
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+#users-card {
+  width: 90%;
+  margin: auto;
+  padding: var(--p-10) 0;
+  color: #fff;
+}
+
+#users-card .user-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: var(--m-5);
+}
+
+#users-card .user-container .user-data p {
+  color: var(--verified-buyer);
+  margin-top: var(--m-1);
+  font-size: 0.9rem;
+}
+
+#users-card article q {
+  color: var(--text-cards);
+  line-height: 25px;
+}
+
+#colton-smith,
+#irene-roberts,
+#anne-wallace {
+  background-color: var(--bg-card-text-color);
+  border-radius: 10px;
+  margin-bottom: var(--m-4);
+  padding: var(--p-10);
+}
+
+#colton-smith img,
+#irene-roberts img,
+#anne-wallace img {
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid lightgray;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 2560px) {
+  /* Header */
+  header {
+    text-align: left;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  /* Text Stars */
+  header #text-rated {
+    width: 60%;
+  }
+
+  header #text-rated h1 {
+    font-size: 3rem;
+  }
+
+  /* Stars */
+  header .rated .stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  header .rated .stars p {
+    padding-left: 20px;
+  }
+
+  header .rated .stars:nth-child(2) {
+    position: relative;
+    left: 5%;
+  }
+
+  header .rated .stars:nth-child(3) {
+    position: relative;
+    left: 10%;
+  }
+
+  /* Users Cards */
+  #users-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    width: 72%;
+  }
+
+  #irene-roberts {
+    position: relative;
+    top: 20px;
+  }
+
+  #anne-wallace {
+    position: relative;
+    top: 40px;
+  }
+
+  #colton-smith,
+  #irene-roberts,
+  #anne-wallace {
+    transition: top 1s ease;
+  }
+
+  #irene-roberts:hover,
+  #anne-wallace:hover {
+    top: 0;
+  }
+}

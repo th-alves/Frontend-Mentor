@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+:root {
+  /* Primary */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Desaturated-blue-link: hsl(258, 47%, 67%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+  /* Fonts */
+  --font-padrao: "Red Hat Display", sans-serif;
+
+  /* Margin */
+  --margin-peq: 0.875rem; /* 14px */
+  --margin-med: 1rem; /* 16px */
+  --margin-gr: 1.5rem; /* 24px */
+  --margin-xxl: 2rem; /* 32px */
+
+  /* Padding */
+  --padding-peq: 0.875rem; /* 14px */
+  --padding-med: 1rem; /* 16px */
+  --padding-gr: 1.5rem; /* 24px */
+  --padding-xxl: 2rem; /* 32px */
+}
+
+@media screen and (min-width: 1200px) and (max-width: 2560px) {
+    /* Main */
+    main {
+        width: 20%;
+    }
+}
