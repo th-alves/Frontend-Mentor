@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 1200px) and (max-width: 2560px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        border-radius: 20px;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.08);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.08);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.08);
+        overflow: hidden;
+
+        transform: translate(-50%, -50%);
+    }
+    #left-side {
+        border-radius: 0 20px 20px 20px;
+    }
+}
